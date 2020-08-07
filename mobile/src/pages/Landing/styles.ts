@@ -20,15 +20,15 @@ const styles = StyleSheet.create({
 // rodar comando: expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
 // ver comandos .txt
 // descomentar linhas comentadas
-    // fontFamily: 'Poppins_400Regular',
+    fontFamily: 'Poppins_400Regular',
     color: '#FFF',
     fontSize: 20,
     lineHeight: 30,
     marginTop: 80,
   },
   titleBold: {
-    // fontFamily: 'Poppins_600SemiBold',
-    fontWeight: 'bold',//comentar essa linha
+    fontFamily: 'Poppins_600SemiBold',
+    // fontWeight: 'bold',//comentar essa linha
   },
 
   buttonsContainer:{
@@ -58,14 +58,14 @@ const styles = StyleSheet.create({
   },
 
   buttonText:{
-    // fontFamily: 'Archivo_700Bold',
-    fontWeight: 'bold',//comentar essa linha
+    fontFamily: 'Archivo_700Bold',
+    // fontWeight: 'bold',//comentar essa linha
     color: '#fff',
     fontSize: 20,
   },
 
   totalConnections:{
-    // fontFamily: 'Poppins_400Regular',
+    fontFamily: 'Poppins_400Regular',
     fontSize: 12,
     color: '#d4c2ff',
     lineHeight: 20,
