@@ -6,8 +6,21 @@ import HeartOutlineIcon  from '../../assets/images/icons/heart-outline.png'
 import unfavoriteIcon  from '../../assets/images/icons/unfavorite.png'
 import whatsappIcon  from '../../assets/images/icons/whatsapp.png'
 
+export interface Teacher {
+    name: string,
+    avatar: string,
+    bio: string,
+    cost: number,
+    id: number,
+    subject: string,
+    whatsapp: string
+}
 
-function TeacherItem(){
+interface TeacherItemProps {
+    teacher: Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps>= ({teacher})=>{
 
     return (
         <View style={styles.container}>
@@ -15,23 +28,23 @@ function TeacherItem(){
                <Image 
                     style={styles.avatar} 
                     source={{
-                        uri: 'https://pbs.twimg.com/profile_images/1215280159588261888/pzneJg0D_400x400.jpg'
+                        uri: teacher.avatar
                     }}
                 />
                 <View style={styles.profileInfo}>
-                    <Text style={styles.name}>Vince</Text>
-                    <Text style={styles.subject}>Quimica</Text>
+                    <Text style={styles.name}>{teacher.name}</Text>
+                    <Text style={styles.subject}>{teacher.subject}</Text>
                 </View> 
             </View>
             <Text style={styles.bio} >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {teacher.bio}
             </Text>
 
             <View style={styles.footer} >
 
                 <Text style={styles.price} >
                     Preço/hora {'  '}
-                    <Text style={styles.priceValue}>30,00</Text>
+                    <Text style={styles.priceValue}>R$ {teacher.cost}</Text>
                 </Text>
 
                 <View style={styles.buttonsContainer}>

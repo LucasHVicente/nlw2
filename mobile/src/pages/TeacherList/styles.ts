@@ -9,10 +9,44 @@ const styles = StyleSheet.create({
     marginTop: -40,
   },
   searchForm:{
-
+    marginBottom: 24,
   },
   subject:{
 
+  },
+  input:{
+    height: 54,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    justifyContent: 'center',
+    paddingHorizontal: 16,
+    marginTop: 4,
+    marginBottom: 16,
+  },
+  inputBlock:{
+    width: '48%'
+  },
+  inputGroup:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+
+  },
+  label:{
+    color: '#d4c2ff',
+    fontFamily: 'Poppins_400Regular'
+  },
+  submitButton:{
+    backgroundColor: '#04d361',
+    flexDirection: 'row',
+    height: 56,
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  submitButtonText:{
+    color: '#FFF',
+    fontFamily: 'Archivo_700Bold',
+    fontSize: 16,
   }
 });
 
